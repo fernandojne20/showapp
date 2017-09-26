@@ -1,0 +1,21 @@
+<div>
+	<div ng-controller="FavBoxCtlr as favBox"> 
+		<div class="search">
+			<input type="text" ng-model="favBox.searchQuery" ng-change="favBox.searchFav()" placeholder="Search for a movie, series and videos">
+		</div>
+
+		<div class="container" >
+			<section id="filters-section" >
+				<h4 class="subtitle semibold">Descubra sus películas y Series Favoritas </h4>
+
+
+				<h3 ng-show="favBox.favList.length == 0">Sorry no favorites movies or series were found related to these criterias</h3>
+				<div cards-list list="favBox.favList" class="cards-container" >
+
+				</div>
+				
+			</section>
+		</div>
+
+	</div>	
+</div>

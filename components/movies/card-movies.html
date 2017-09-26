@@ -1,0 +1,9 @@
+
+
+	<div card-info info="cardMovie" 
+		 runtime="{{cardMovieCtrl.movieDetail.runtime}}" 
+		 middle-dscrp="{{ cardMovie.release_date | date : 'd MMM y' }}"
+		 right-dscrp ="{{cardMovie.genre_ids.join('')}}"
+		 name={{cardMovie.title}}
+		 class="inline"></div>
+

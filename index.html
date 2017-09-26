@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title></title>
+	<link rel="stylesheet" href="/css/app.css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600" rel="stylesheet">
+
+	<!-- Setting the right viewport -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+</head>
+<body ng-app="showapp">
+	
+	<div ui-view></div>
+
+
+	<script src="node_modules/angular/angular.min.js" ></script>
+	<script src="node_modules/angular-ui-router/release/angular-ui-router.min.js" ></script>
+	<script src="node_modules/ngstorage/ngStorage.min.js" ></script>
+	<script src="scripts/app.js"></script>
+	<script src="scripts/config.js"></script>
+	<script src="components/commons/card-info.dir.js"></script>
+	<script src="components/commons/cards-list.dir.js"></script>
+	<script src="components/movies/card-movies.dir.js"></script>
+	<script src="components/series/card-series.dir.js"></script>
+	<script src="components/movies/movies-box.ctlr.js"></script>
+	<script src="components/series/series-box.ctlr.js"></script>
+	<script src="components/favorites/fav-box.ctlr.js"></script>
+	<script src="components/movies/movies.srv.js"></script>
+	<script src="components/series/series.srv.js"></script>
+	<script src="components/favorites/fav.srv.js"></script>
+</body>
+</html>

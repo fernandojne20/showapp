@@ -1,0 +1,11 @@
+<div class="centered">
+ 		
+	     <section class="cards"> 
+			<!-- Card-Box -->
+			<div ng-if="list.movies" card-movie movie="card" ng-repeat="card in list.results" class="card"></div>
+			<div ng-if="list.series" card-serie serie="card" ng-repeat="card in list.results" class="card"></div>
+			<div ng-if="list.favorites" card-movie movie="card" ng-repeat="card in list.results" class="card"></div>
+
+		 </section> 
+	
+</div>

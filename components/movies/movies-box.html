@@ -1,0 +1,37 @@
+<div>
+	<div ng-controller="MovieBoxCtlr as movieBox"> 
+		<div class="search">
+			<input type="text" ng-model="movieBox.searchQuery" ng-change="movieBox.searchMovies()" placeholder="Search for a movie, series and videos">
+		</div>
+
+		<div class="container" >
+			<section id="filters-section" >
+				<h4 class="subtitle semibold">Descubra nuevas películas y programas de televisión </h4>
+
+				<div>
+					<div class="filters">
+						<label>Año</label>
+						<select name="age" ng-model="movieBox.yearSelected" ng-change="movieBox.searchMovies()">
+							<option ng-repeat="year in movieBox.years" ng-value="year">{{year}}</option>
+						</select>
+
+					</div>
+					<div class="filters">
+						<label>Géneros</label>
+						<select name="genre" ng-model="movieBox.genre" ng-change="movieBox.searchMovies()">
+							<option ng-repeat="genre in movieBox.genres" ng-value="genre">{{genre.name}}</option>
+							
+						</select>
+
+					</div>	
+				</div>
+				<h3 ng-show="movieBox.moviesList.results.length == 0">Sorry no movies were found related to these criterias</h3>
+				<div cards-list list="movieBox.moviesList" class="cards-container" >
+
+				</div>
+				
+			</section>
+		</div>
+
+	</div>	
+</div>

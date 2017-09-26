@@ -1,0 +1,22 @@
+
+  <div class='card_left'>
+    <img ng-src="{{cardInfoCtrl.getUrlImg(cardInfo.poster_path)}}">
+  </div>
+  <div class='card_right'>
+    <h1>{{name.length > 30 ? (name.substring(0,30)+'...') : name}}</h1>
+    <span class="raiting">{{cardInfo.vote_average}}</span>
+    <div class='card_right_details'>
+      <ul>
+        <li>{{cardInfoCtrl.getRuntimeFormatted(runtime)}} |</li>
+        <li>{{ middleDscrp }} |</li>
+        <li>{{ rightDscrp }}</li>
+      </ul>
+      <div class='card_right_review'>
+        <p>{{cardInfo.overview.substring(0,110)}}...</p>
+      </div>
+      <div class='card_right_button'>
+        <a href='' target='_blank'>Ver Trailer</a>
+        <a class="fav" target='_blank' ng-click="cardInfoCtrl.saveFav()">Agregar a Favoritos</a>
+      </div>
+    </div>
+  </div>

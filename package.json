@@ -1,0 +1,25 @@
+{
+  "name": "showapp",
+  "description": "This Project display Movies Information hosted in TheMovieDB API.",
+  "version": "1.0.0",
+  "main": "index.js",
+  "dependencies": {
+    "angular": "^1.6.5",
+    "angular-ui-router": "^1.0.3",
+    "ngstorage": "^0.3.11"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fernandojne20/showapp.git"
+  },
+  "author": "Fernando Nuñez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fernandojne20/showapp/issues"
+  },
+  "homepage": "https://github.com/fernandojne20/showapp#readme"
+}
